@@ -1,0 +1,4 @@
+CREATE VIEW unique_ip_address AS
+SELECT ip_addresses, COUNT(ip_addresses) as ip_addresses_count
+FROM ip_address
+GROUP BY ip_addresses;
